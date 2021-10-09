@@ -1,0 +1,82 @@
+body {
+    background-image: url('https://thumbs.dreamstime.com/z/composition-%C3%A9tendue-plate-avec-les-v%C3%AAtements-et-jouets-%C3%A9l%C3%A9gants-de-b%C3%A9b%C3%A9-sur-le-fond-en-bois-130000083.jpg');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+.main-buttons{
+ position: absolute;
+ top: 100px;
+ margin-left: 520px;
+}
+.buttons{
+    background-color: #008CBA; 
+    border: none;
+    color: #ffffff;
+    padding: 10px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 12px;
+    transition-duration: 0.4s
+}
+.buttons:hover {
+    background-color: white; 
+    color: #008CBA;
+}
+#logo{
+    height: 80px;
+    width: 120px;
+}
+.all-items{
+    position: absolute;
+    top: 200px;
+    height: 1500px ;
+    width: 1000px;
+}
+.item{
+    
+    border: 2px outset rgb(3, 0, 0);
+    background-color: white;
+    border-radius: 20px;
+    
+    text-align: center;
+    height: 300px;
+    width: 350px;
+    margin: 30px;
+    
+}
+
+.line1{
+    display: flex;
+    margin-left: 90px;
+}
+.line2{
+    margin-top: 40px;
+    display: flex;
+    margin-left: 90px;
+}
+.line3{
+    margin-top: 40px;
+    display: flex;
+    margin-left: 90px;
+}
+
+.clothes{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+.clothes:hover{
+    transform: scale(1.5);
+    }
+.pannel-button{
+    background-color: rgb(251, 255, 255);
+    border: 2px outset black;
+    border-radius: 20px;
+}
+.pannel-button:hover {
+    background-color: #008CBA; 
+    color: white;
+}
