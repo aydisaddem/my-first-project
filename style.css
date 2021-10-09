@@ -8,7 +8,7 @@ body {
 .main-buttons{
  position: absolute;
  top: 100px;
- margin-left: 520px;
+ margin-left: 370px;
 }
 .buttons{
     background-color: #008CBA; 
@@ -19,7 +19,10 @@ body {
     display: inline-block;
     font-size: 15px;
     border-radius: 12px;
-    transition-duration: 0.4s
+    transition-duration: 0.4s;
+    height: 50px;
+    width: 150px;
+    
 }
 .buttons:hover {
     background-color: white; 
@@ -42,7 +45,7 @@ body {
     border-radius: 20px;
     
     text-align: center;
-    height: 300px;
+    height: 400px;
     width: 350px;
     margin: 30px;
     
@@ -72,7 +75,7 @@ body {
     transform: scale(1.5);
     }
 .pannel-button{
-    background-color: rgb(251, 255, 255);
+    background-color:rgb(201, 226, 250);
     border: 2px outset black;
     border-radius: 20px;
 }
@@ -80,3 +83,81 @@ body {
     background-color: #008CBA; 
     color: white;
 }
+
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #008CBA;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #03212b;
+  }
+  
+  #validation {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 600px;
+    position: absolute;
+    top: 600px;
+    left:400px
+  }
+
+  .size{
+      
+      background-color: rgb(201, 226, 250)
+  }
+
+  #new-collection-boys{
+    height: 340px;
+    width: 1370px;
+    background-color: #c5e1eb; 
+    position: absolute;
+    top: 250px;
+    margin-left: 80px;
+    border-radius: 20px
+  }
+
+  #new-collection-girls{
+    height: 340px;
+    width: 1370px;
+    background-color: #f5c4e4;          
+    position: absolute;
+    top: 650px;
+    margin-left: 80px;
+    border-radius: 20px
+  }
+  .homePic{
+      border:2px outset black;
+      height: 250px;
+      width: 250px;
+      margin-left: 15px;
+      border-radius: 20px
+  }
+.newCollectionPics{
+    
+    display: flex;
+    border-radius: 20px;
+    margin-left: 7px;
+    margin-top: 10px;
+}
+
+ 
