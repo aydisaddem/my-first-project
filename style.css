@@ -1,271 +1,239 @@
 body {
-    background-image: url('https://thumbs.dreamstime.com/z/composition-%C3%A9tendue-plate-avec-les-v%C3%AAtements-et-jouets-%C3%A9l%C3%A9gants-de-b%C3%A9b%C3%A9-sur-le-fond-en-bois-130000083.jpg');
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-  }
+  background-image: url('https://thumbs.dreamstime.com/z/composition-%C3%A9tendue-plate-avec-les-v%C3%AAtements-et-jouets-%C3%A9l%C3%A9gants-de-b%C3%A9b%C3%A9-sur-le-fond-en-bois-130000083.jpg');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
 .main-buttons{
- position: absolute;
- top: 60px;
- margin-left: 420px;
+position: absolute;
+top: 60px;
+margin-left: 420px;
 }
 .buttons{
-    background-color: #008CBA; 
-    border: none;
-    color: #ffffff;
-    padding: 10px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 15px;
-    border-radius: 12px;
-    transition-duration: 0.4s;
-    height: 50px;
-    width: 150px;
-    
+  background-color: #008CBA; 
+  border: none;
+  color: #ffffff;
+  padding: 10px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  height: 50px;
+  width: 150px;
+  
 }
 .buttons:hover {
-    background-color: white; 
-    color: #008CBA;
+  background-color: white; 
+  color: #008CBA;
 }
 #logo{
-    height: 80px;
-    width: 120px;
-    margin-left: 20px;
-    margin-top: 20px;
+  height: 80px;
+  width: 120px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
-.items-container{
-    position: absolute;
-    top: 200px;
-    height: 2000px ;
-    width: 1000px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-.item{
-    
-    border: 1px outset rgb(3, 0, 0);
-    background-color: white;
-    border-radius: 20px;
-    
-    text-align: center;
-    height: 400px;
-    width: 300px;
-    margin: 30px;
-    
+.boys-container{
+  position: absolute;
+  top: 300px;
+  height: 2000px ;
+  width: 1500px;
+  display: flex;
+  flex-wrap: wrap;
+  left:70px;
+  
 }
 
-.line1{
-    display: flex;
-    margin-left: 90px;
+.girls-container{
+  position: absolute;
+  top: 300px;
+  left:70px;
+  height: 2000px ;
+  width: 1500px;
+  display: flex;
+  flex-wrap: wrap;
+  
 }
-.line2{
-    margin-top: 40px;
-    display: flex;
-    margin-left: 90px;
+
+
+.item{
+  border: 1px outset rgb(3, 0, 0);
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  height: 350px;
+  width: 300px;
+  margin: 20px;
+  opacity: 90%;
 }
-.line3{
-    margin-top: 40px;
-    display: flex;
-    margin-left: 90px;
-}
+
 
 .clothes{
-    height: 200px;
-    width: 200px;
-    border-radius: 20px;
+  margin: 20px;
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
 }
+
+
+
 .clothes:hover{
-    transform: scale(1.5);
-    }
+  transform: scale(1.5);
+  }
 .pannel-button{
-    background-color:rgb(201, 226, 250);
-    border: 2px outset black;
-    border-radius: 20px;
+  background-color:rgb(201, 226, 250);
+  border: 2px outset black;
+  border-radius: 20px;
 }
 .pannel-button:hover {
-    background-color: #008CBA; 
-    color: white;
+  background-color: #008CBA; 
+  color: white;
 }
 
 
 
 input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  input[type=submit] {
-    width: 100%;
-    background-color: #008CBA;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #03212b;
-  }
-  
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #008CBA;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #03212b;
+}
 
 
-  .size{
-      
-      background-color: rgb(201, 226, 250)
-  }
 
-  #new-collection-boys{
-    height: 340px;
-    width: 1370px;
-    background-color: #c5e1eb; 
-    position: absolute;
-    top: 230px;
-    margin-left: 80px;
-    border-radius: 20px
-  }
-
-  #new-collection-girls{
-    height: 340px;
-    width: 1370px;
-    background-color: #f5c4e4;          
-    position: absolute;
-    top: 630px;
-    margin-left: 80px;
-    border-radius: 20px
-  }
-  .homePic{
-      border:2px outset black;
-      height: 250px;
-      width: 250px;
-      margin-left: 15px;
-      border-radius: 20px
-  }
-  .homePic:hover{
-      transform: scale(1.5);
-  }
-.newCollectionPics{
+.size{
     
-    display: flex;
-    border-radius: 20px;
-    margin-left: 7px;
-    margin-top: 10px;
+    background-color: rgb(201, 226, 250)
+}
+
+#new-collection-boys{
+  height: 340px;
+  width: 1370px;
+  background-color: #c5e1eb; 
+  position: absolute;
+  top: 250px;
+  margin-left: 80px;
+  border-radius: 20px
+}
+
+#new-collection-girls{
+  height: 340px;
+  width: 1370px;
+  background-color: #f5c4e4;          
+  position: absolute;
+  top: 630px;
+  margin-left: 80px;
+  border-radius: 20px
+}
+.homePic{
+    border:2px outset black;
+    height: 250px;
+    width: 250px;
+    margin-left: 15px;
+    border-radius: 20px
+}
+.homePic:hover{
+    transform: scale(1.5);
+}
+.newCollectionPics{
+  
+  display: flex;
+  border-radius: 20px;
+  margin-left: 7px;
+  margin-top: 10px;
 }
 
 input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  input[type=submit] {
-    background-color: #008CBA;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #026383;
-  }
-  
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    width: 600px;
-    margin-left: 420px;
-  }
-  #purchase {
-    background-color: rgb(201, 226, 250);
-    width: 1500px;
-    height:300px;
-    margin-top: 100px;
-  }
-
-
-
-  /* Button used to open the contact form - fixed at the bottom of the page */
-.open-button {
-  background-color: #555;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  top: 23px;
-  right: 28px;
-  width: 280px;
-}
-
-/* The popup form - hidden by default */
-.form-popup {
-  display: none;
-  position: fixed;
-  top: 10px;
-  right: 600px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
-}
-
-/* Add styles to the form container */
-.form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: white;
-}
-
-/* Full-width input fields */
-.form-container input[type=text], .form-container input[type=password] {
   width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-/* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for the submit/login button */
-.form-container .btn {
-  background-color: #04AA6D;
+input[type=submit] {
+  background-color: #008CBA;
   color: white;
-  padding: 16px 20px;
+  padding: 12px 20px;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
-  width: 100%;
-  margin-top:10px;
-  opacity: 0.8;
 }
 
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: red;
+input[type=submit]:hover {
+  background-color: #026383;
 }
 
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 600px;
+  margin-left: 420px;
 }
 
- 
+.minMaxPrice{
+  position: absolute;
+  margin-left: 10px;
+  top:150px;
+}
+
+.min {
+  position: absolute;
+  top:120px;
+  width: 100px;
+  left: 50px;
+}
+.max {
+  position: absolute;
+  top:120px;
+  left:200px;
+  width: 100px;
+}
+.selectPrice{
+  position:absolute;
+  top: 200px;
+  width: 150px;
+  left:90px ;
+  background-color: #008CBA;
+  border-radius: 12px;
+  height: 30px;
+}
+#mySearch{
+  position: absolute;
+  width: 200px;
+  right: 90px;
+  top:140px;
+}
+
+.searchbtn{
+  position:absolute;
+  top: 200px;
+  width: 150px;
+  right:115px ;
+  background-color: #008CBA;
+  border-radius: 12px;
+  height: 30px;
+}
