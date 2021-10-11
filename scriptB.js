@@ -1,32 +1,3 @@
-function each(coll, f) {
-  if (Array.isArray(coll)) {
-    for (var i = 0; i < coll.length; i++) {
-      f(coll[i], i);
-    }
-  } else {
-    for (var key in coll) {
-      f(coll[key], key);
-    }
-  }
-}
-function map(array, f) {
-  var acc = [];
-  each(array, function (element, i) {
-    acc.push(f(element, i));
-  });
-  return acc;
-}
-
-
-function filter(array,predicate){
-  var acc=[];
-  each(array,function(element){
-    if (predicate(element)){
-      acc.push(element);
-    }
-  })
-  return acc;
-}
 
 $( document ).ready(function(){ 
   
@@ -34,26 +5,21 @@ $( document ).ready(function(){
   
 })
 
-
-
  var arrB = []
  
 
- function Item(ref,type,img,price)
- {
+ function Item(ref,type,img,price){
    var o = {}
    o.ref=ref
    o.type=type
    o.price=price
    o.img=img
    o.prepare=prepare
- 
    return o ;
  }
 
- function prepare()
-{
-  return "<div class='item'><div class='ref'> ref : "+this.ref+"</div> <div class='type'>"+this.type+'</div> <div><img class="clothes" src="'+this.img+'"</div> <div id="price">'+this.price+'</div></div>'
+ function prepare(){
+  return "<div class='item'><div class='ref'> ref : "+this.ref+"</div> <div class='type'>"+this.type+'</div> <div><img class="clothes" src="'+this.img+'"</div> <div class="price">'+this.price+'</div></div>'
 }
  
  var B1= Item('B001',"jacket","https://m.media-amazon.com/images/I/51WCe5FZLRL._AC_UX679_.jpg","60$")
@@ -71,8 +37,6 @@ $( document ).ready(function(){
  var B13= Item('B013',"hoddies","https://www.thefashiontamer.com/wp-content/uploads/2018/11/womens-hoodies-2017-fashion-womens-hoodies-sweatshirts-letters.jpg","35$")
  var B14= Item('B014',"pant","https://ae01.alicdn.com/kf/H3b0f41b5d3314ce99e1c7d1c48f8cf3fM/Children-Cargo-Pants-for-Boys-Pants-2021-Spring-Children-Boy-Trousers-Fashion-Cotton-Kid-Pants-Boy.jpg_Q90.jpg_.webp","35$")
  var B15= Item('B015',"pant","https://sc04.alicdn.com/kf/Hd98094d3bf30435780e251e963bebe0bv.jpg","35$")
- 
-  
  arrB.push(B1);
  arrB.push(B2);
  arrB.push(B3);

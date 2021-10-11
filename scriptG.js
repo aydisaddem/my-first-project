@@ -1,55 +1,22 @@
-function each(coll, f) {
-    if (Array.isArray(coll)) {
-      for (var i = 0; i < coll.length; i++) {
-        f(coll[i], i);
-      }
-    } else {
-      for (var key in coll) {
-        f(coll[key], key);
-      }
-    }
-  }
-  function map(array, f) {
-    var acc = [];
-    each(array, function (element, i) {
-      acc.push(f(element, i));
-    });
-    return acc;
-  }
-
-  function filter(array,predicate){
-    var acc=[];
-    each(array,function(element){
-      if (predicate(element)){
-        acc.push(element);
-      }
-    })
-    return acc;
-  }
 
   $( document ).ready(function(){ 
-  
-    display()
-    
+    display() 
   })
 
   var arrG = []
 
-  function Item(ref,type,img,price)
- {
+  function Item(ref,type,img,price){
    var o = {}
    o.ref=ref
    o.type=type
    o.price=price
    o.img=img
    o.prepare=prepare
- 
    return o ;
  }
 
 
- function prepare()
- {
+ function prepare(){
    return "<div class='item'><div class='ref'> ref : "+this.ref+"</div> <div class='type'>"+this.type+'</div> <div><img class="clothes" src="'+this.img+'"</div> <div class="price">'+this.price+'</div></div>'
  }
 
@@ -68,9 +35,7 @@ function each(coll, f) {
  var G12= Item('G012',"jacket","https://image.dhgate.com/0x0s/f2-albu-g8-M00-53-E3-rBVaVF3czd2AO08DAAS83F35yvU300.jpg/ni-as-de-manga-larga-una-l-nea-de-vestidos.jpg","50$")
  var G13= Item('G013',"hoddies","https://ae01.alicdn.com/kf/H12ac89a786ac4758b0b830137d4d6f27V/ZHENBAILI-Za-Woman-2021-Casual-Traf-Pull-Autumn-Winter-Y2K-Sweet-Girls-Heart-Jacquard-Knit-Jumpers.jpg_Q90.jpg_.webp","20$")
  var G14= Item('G014',"jogging","https://s.alicdn.com/@sc04/kf/H96122a7125e6470fa11483a6cd217dccu.jpg","45$")
- var G15= Item('G015',"jogging","https://ae01.alicdn.com/kf/Hda66eb970bb942999b52a5a5a5068b12w/Filles-v-tements-ensemble-2021-printemps-pull-sweat-jean-pissage-2-pi-ces-tenues-v-tements.jpg_q50.jpg","50$")
- 
-  
+ var G15= Item('G015',"jogging","https://ae01.alicdn.com/kf/Hda66eb970bb942999b52a5a5a5068b12w/Filles-v-tements-ensemble-2021-printemps-pull-sweat-jean-pissage-2-pi-ces-tenues-v-tements.jpg_q50.jpg","50$") 
  arrG.push(G1);
  arrG.push(G2);
  arrG.push(G3);
