@@ -30,9 +30,9 @@
  var G7= Item('G007',"pant","https://www.dhresource.com/0x0/f2/albu/g19/M01/FF/F3/rBVap2EUBoqAFO5NAAH8Vuj73ns182.jpg/jeans-bear-leader-autumn-winter-baby-boys.jpg","40$")
  var G8= Item('G008',"coat","https://ae01.alicdn.com/kf/HTB1wt1DLNTpK1RjSZR0q6zEwXXao/2019-Autumn-Winter-girls-wool-coat-kids-clothes-children-clothing-fashion-patchwork-thick-Warm-outwear-teenage.jpg","80$")
  var G9= Item('G009',"pant","https://i.pinimg.com/736x/57/34/d9/5734d9c58de1a02ae087671305c7531e.jpg","35$")
- var G10= Item('G010',"coat","https://ae01.alicdn.com/kf/H20d8447bc8c048cdb44bc1adfe29055bn/2021-Girls-Clothes-Autumn-and-Winter-New-Children-Fashion-Cartoon-Thick-Warm-Medium-Long-Woolen-Coat.jpg_Q90.jpg_.webp","35$")
- var G11= Item('G011',"hoddies","https://ae01.alicdn.com/kf/Hd9ec95de55f240aaa3708b8154ddbc1ew/2021-Autumn-And-Winter-New-Velvet-Girls-Trousers-Cartoon-Printing-Solid-Color-Children-s-Warm-Trousers.jpg_q50.jpg","70$")
- var G12= Item('G012',"jacket","https://image.dhgate.com/0x0s/f2-albu-g8-M00-53-E3-rBVaVF3czd2AO08DAAS83F35yvU300.jpg/ni-as-de-manga-larga-una-l-nea-de-vestidos.jpg","50$")
+ var G10= Item('G010',"coat","https://ae01.alicdn.com/kf/H20d8447bc8c048cdb44bc1adfe29055bn/2021-Girls-Clothes-Autumn-and-Winter-New-Children-Fashion-Cartoon-Thick-Warm-Medium-Long-Woolen-Coat.jpg_Q90.jpg_.webp","70$")
+ var G11= Item('G011',"pant","https://ae01.alicdn.com/kf/Hd9ec95de55f240aaa3708b8154ddbc1ew/2021-Autumn-And-Winter-New-Velvet-Girls-Trousers-Cartoon-Printing-Solid-Color-Children-s-Warm-Trousers.jpg_q50.jpg","70$")
+ var G12= Item('G012',"robe","https://image.dhgate.com/0x0s/f2-albu-g8-M00-53-E3-rBVaVF3czd2AO08DAAS83F35yvU300.jpg/ni-as-de-manga-larga-una-l-nea-de-vestidos.jpg","50$")
  var G13= Item('G013',"hoddies","https://ae01.alicdn.com/kf/H12ac89a786ac4758b0b830137d4d6f27V/ZHENBAILI-Za-Woman-2021-Casual-Traf-Pull-Autumn-Winter-Y2K-Sweet-Girls-Heart-Jacquard-Knit-Jumpers.jpg_Q90.jpg_.webp","20$")
  var G14= Item('G014',"jogging","https://s.alicdn.com/@sc04/kf/H96122a7125e6470fa11483a6cd217dccu.jpg","45$")
  var G15= Item('G015',"jogging","https://ae01.alicdn.com/kf/Hda66eb970bb942999b52a5a5a5068b12w/Filles-v-tements-ensemble-2021-printemps-pull-sweat-jean-pissage-2-pi-ces-tenues-v-tements.jpg_q50.jpg","50$") 
@@ -67,7 +67,7 @@
   function filterByPrice(){
     var arr=[]
     for( var i=0 ; i<arrG.length; i++){
-        if(parseInt((arrG[i].price),10)> $('#min').val() && parseInt((arrG[i].price),10)< $('#max').val() ){
+        if(parseInt((arrG[i].price),10)>= $('#min').val() && parseInt((arrG[i].price),10)<= $('#max').val() ){
             arr.push(arrG[i])
         }
         

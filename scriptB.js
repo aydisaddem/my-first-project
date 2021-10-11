@@ -70,7 +70,7 @@ function displayuniverselle(arrB) {
 function filterByPrice(){
   var arr=[]
   for( var i=0 ; i<arrB.length; i++){
-      if(parseInt((arrB[i].price),10)> $('#min').val() && parseInt((arrB[i].price),10)< $('#max').val() ){
+      if(parseInt((arrB[i].price),10)>= $('#min').val() && parseInt((arrB[i].price),10)<= $('#max').val() ){
           arr.push(arrB[i])
       }
   }
